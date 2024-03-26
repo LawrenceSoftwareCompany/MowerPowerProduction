@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/imgs/Logo-MP_Productions.bmp"
+    />
+    <title>merchandise</title>
+  </head>
+  <body>
+    <!-- Navigation Modal -->
+    <div class="modal" id="modal">
+      <nav>
+        <a href="./index.html" class="modalNavItem">Books</a>
+        <a href="./biographies.html" class="modalNavItem">Biographies</a>
+        <a href="./merchandise.html" class="modalNavItem">Merchandise</a>
+        <a href="./contactus.html" class="modalNavItem">Contact Us</a>
+        <button class="modalNavItem" onclick="toggleModal()">Close</button>
+      </nav>
+    </div>
+    <!-- Website Header -->
+    <header class="header">
+      <div class="siteTitleContainer">
+        <h2 class="siteTitleText">Mower Power</h2>
+        <h2 class="siteTitleText">Productions</h2>
+      </div>
+      <div class="openNavContainer">
+        <button onclick="toggleModal()">☰</button>
+      </div>
+    </header>
+
+    <!-- main content -->
+    <main class="main">
+      <h1 class="PGContentTitle">Merchandise</h1>
+      <div class="merchImgContainer">
+        <img src="./assets/imgs/Merchandise-Porter1.jpg" alt="Porter Merch" />
+        <img src="./assets/imgs/Merchandise-Porter2.jpg" alt="Porter Merch" />
+        <img src="./assets/imgs/Merchandise-Porter3.jpg" alt="Porter Merch" />
+      </div>
+      <h2 class="merchAd">
+        If you enjoy what we do and would like to represent or work, please take
+        a look at our merch!
+      </h2>
+      <a
+        href="https://www.zazzle.com/store/mowerpowerfamily/products"
+        class="shopBtn"
+        target="_blank"
+        >Shop Now!</a
+      >
+    </main>
+
+    <footer class="footer">
+      <div>
+        <nav class="footerNav">
+          <a href="./index.html" class="footerNavItem">Books</a>
+          <a href="./biographies.html" class="footerNavItem">Biographies</a>
+          <a href="./merchandise.html" class="footerNavItem">Merchandise</a>
+          <a href="./contactus.html" class="footerNavItem">Contact Us</a>
+        </nav>
+        <span class="creditSpan"
+          >Website by:
+          <a href="https://www.lawrencesoftwarecompany.com/" target="_blank"
+            >Lawrence Software Company</a
+          ></span
+        >
+      </div>
+    </footer>
+    <script src="./src/navScript.js"></script>
+  </body>
+</html>

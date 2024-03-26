@@ -1,0 +1,366 @@
+:root {
+  --black: #1f1f1f;
+  --white: whitesmoke;
+  --gold: #d4af37;
+  --text: #fff;
+  --blue: #05c3dd;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+}
+
+h1 {
+  font-size: 5.8rem;
+  color: var(--black);
+}
+
+h2 {
+  font-size: 3.6rem;
+  color: var(--black);
+}
+
+h3 {
+  font-size: 2.3rem;
+  color: var(--black);
+}
+
+p {
+  font-size: 1.4rem;
+  color: var(--black);
+  text-align: left;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: 0.1rem solid transparent;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+/* Modal Nav styling */
+
+.modal {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(32, 32, 32, 0.387);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+}
+
+.modalNavItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5.8rem;
+  text-decoration: none;
+  height: 20vh;
+  width: 100%;
+}
+
+.modalNavItem:hover {
+  text-decoration: underline;
+}
+
+.modalNavItem:nth-child(odd) {
+  background-color: var(--black);
+  color: var(--gold);
+  animation: fadeIn 0.6s;
+}
+
+.modalNavItem:nth-child(even) {
+  background-color: var(--gold);
+  color: var(--black);
+  animation: fadeIn 0.8s;
+}
+
+button.modalNavItem {
+}
+
+/* Header styling */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+  height: 6rem;
+  border-bottom: 0.3rem solid var(--gold);
+  box-shadow: 0 1rem 1rem lightgray;
+  z-index: 8;
+}
+
+.siteTitleText {
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  margin-top: 0.1rem;
+  color: var(--gold);
+}
+
+/* Floating menu button styling */
+
+.openNavContainer {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  margin-right: 2.3rem;
+  top: 0;
+  margin-bottom: 3rem;
+  background-color: var(--black);
+  border-radius: 50%;
+  /* box-shadow: 0 1rem 1rem rgba(5, 5, 5, 0.288); */
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 0.2rem solid transparent;
+  transition: all 0.5s;
+  z-index: 5;
+}
+
+.openNavContainer:hover {
+  border-color: var(--gold);
+}
+
+.openNavContainer button {
+  color: var(--gold);
+  /* transition: all 0.5s; */
+}
+
+/* Main styling */
+
+.main {
+  margin-top: 6.5rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.PGContentTitle {
+}
+
+/* Book Page styling */
+
+.List {
+  width: 60%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  gap: 4rem;
+}
+
+.book {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  /* height: 20rem; */
+  border-radius: 0.8rem;
+  transition: all 0.7s;
+  gap: 1rem;
+}
+
+.book:hover {
+  box-shadow: 0 1rem 1rem lightgray;
+  transform: scale(1.05);
+}
+
+.book img {
+  width: 20rem;
+  height: 100%;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+}
+
+.bookTxtContainer h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bookTxtContainer p {
+  margin-top: 0;
+}
+
+.bookTxtContainer a {
+  display: block;
+  width: 8rem;
+  text-decoration: none;
+  background-color: var(--black);
+  color: var(--gold);
+  font-size: 1.4rem;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  border: 0.2rem solid transparent;
+  transition: all 0.5s;
+}
+
+.bookTxtContainer a:hover {
+  border-color: var(--gold);
+  box-shadow: 0 1rem 1rem lightgray;
+}
+
+/* Bios styling */
+
+.BioContainer {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 1rem;
+}
+
+.BioContainer img {
+  width: 20rem;
+  height: 100%;
+}
+
+.bioTxtContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Merch Styling */
+
+.merchImgContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.merchImgContainer img {
+  width: 25%;
+}
+
+.merchAd {
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.shopBtn {
+  display: block;
+  /* width: 10rem; */
+  text-decoration: none;
+  background-color: var(--black);
+  color: var(--gold);
+  font-size: 3.6rem;
+  /* letter-spacing: 1rem; */
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  border: 0.2rem solid transparent;
+  transition: all 0.5s;
+  margin-bottom: 5rem;
+}
+
+.shopBtn:hover {
+  border-color: var(--gold);
+  box-shadow: 0 1rem 1rem lightgray;
+}
+
+/* Footer styling */
+
+.footer {
+  width: 100%;
+  min-height: 5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--black);
+  border-top: 0.3rem solid var(--gold);
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0;
+  margin-left: 2.3rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.footerNavItem {
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 1.4rem;
+  border-bottom: 0.1rem solid transparent;
+  width: max-content;
+  transition: all 0.5s;
+}
+
+.footerNavItem:hover {
+  border-color: var(--gold);
+}
+
+.creditSpan {
+  margin-left: 2.3rem;
+  margin-top: 99%;
+  color: var(--gold);
+  font-size: 1.4rem;
+  margin-bottom: 2.3rem;
+}
+
+.creditSpan a {
+  color: var(--gold);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .List {
+    width: 100%;
+  }
+  .book {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .book img {
+    width: 100%;
+    border-radius: 0.8rem 0.8rem 0 0;
+  }
+
+  .BioContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .BioContainer img {
+    width: 100%;
+    /* border-radius: 0.8rem 0.8rem 0 0; */
+  }
+}
